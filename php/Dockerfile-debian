@@ -21,7 +21,8 @@ RUN install-php-extensions \
         pdo_pgsql \
         imagick \
         mongodb \
-        xdebug
+        xdebug \
+        sockets
 
 # Disable xdebug by default (see PHP_ENABLE_XDEBUG)
 RUN rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
